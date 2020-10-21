@@ -815,7 +815,6 @@ static long msm_csid_subdev_ioctl(struct v4l2_subdev *sd,
 	case MSM_SD_SHUTDOWN:
 		rc = msm_csid_release(csid_dev);
 		break;
-	default:
 	}
 	CDBG("%s:%d\n", __func__, __LINE__);
 	mutex_unlock(&csid_dev->mutex);
@@ -971,7 +970,6 @@ static long msm_csid_subdev_ioctl32(struct v4l2_subdev *sd,
 	case MSM_SD_SHUTDOWN:
 		rc = msm_csid_release(csid_dev);
 		break;
-	default:
 	}
 	CDBG("%s:%d\n", __func__, __LINE__);
 	mutex_unlock(&csid_dev->mutex);

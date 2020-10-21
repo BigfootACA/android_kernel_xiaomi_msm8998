@@ -1607,7 +1607,6 @@ static long msm_csiphy_subdev_ioctl(struct v4l2_subdev *sd,
 		csiphy_dev->csiphy_sof_debug = SOF_DEBUG_DISABLE;
 		rc = msm_camera_enable_irq(csiphy_dev->irq, false);
 		break;
-	default:
 	}
 	mutex_unlock(&csiphy_dev->mutex);
 	CDBG("%s:%d\n", __func__, __LINE__);
