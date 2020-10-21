@@ -288,9 +288,10 @@ always          += msm8998-mtp.dtb \
 	msm8998-v2-mtp.dtb \
 	msm8998-v2.1-mtp.dtb \
 	msm8998-v2.1-mtp-4k-display.dtb \
-	chiron-msm8998-mtp.dtb \	
-	chiron-msm8998-v2-mtp.dtb \	
+	chiron-msm8998-mtp.dtb \
+	chiron-msm8998-v2-mtp.dtb \
 	chiron-msm8998-v2.1-mtp.dtb
+
 always          += $(dtbo-y)
 subdir-y        := $(dts-dirs)
 else
